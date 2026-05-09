@@ -5,21 +5,21 @@
 class Difi < Formula
   desc "The pixel-perfect terminal diff viewer"
   homepage "https://github.com/xguot/difi"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xguot/difi/releases/download/v0.2.5/difi_Darwin_x86_64.tar.gz"
-      sha256 "7fffc68f3fc08217b0c2746792eaa0122719a018058079fe316e2cefcf95bdfe"
+      url "https://github.com/xguot/difi/releases/download/v0.2.6/difi_Darwin_x86_64.tar.gz"
+      sha256 "829c90e205272f12018cd9f2d635885bfca31f4e05f3cb63b9c4c6c98173faa6"
 
       define_method(:install) do
         bin.install "difi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xguot/difi/releases/download/v0.2.5/difi_Darwin_arm64.tar.gz"
-      sha256 "14d5ae7999c11b45c2884fa39304ed569df5cebe381404ba510b5905da441363"
+      url "https://github.com/xguot/difi/releases/download/v0.2.6/difi_Darwin_arm64.tar.gz"
+      sha256 "739c8597d4e5b0c3aba102050ccbf20701c7abca39a816907b2baa957ffdcb53"
 
       define_method(:install) do
         bin.install "difi"
@@ -29,15 +29,15 @@ class Difi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xguot/difi/releases/download/v0.2.5/difi_Linux_x86_64.tar.gz"
-      sha256 "98ae41a989177ee0d5c175f6633411f703539244bea7ded6270d188a374ac5bf"
+      url "https://github.com/xguot/difi/releases/download/v0.2.6/difi_Linux_x86_64.tar.gz"
+      sha256 "8ca8ccd5983bb0820c1e8d9af52fd970a4b9c01d52dd5f6c6663005d5e4d803c"
       define_method(:install) do
         bin.install "difi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xguot/difi/releases/download/v0.2.5/difi_Linux_arm64.tar.gz"
-      sha256 "ef527c482af59f9a81852d3121264c04732805efcdbd74fc58bb7f3969d7d75f"
+      url "https://github.com/xguot/difi/releases/download/v0.2.6/difi_Linux_arm64.tar.gz"
+      sha256 "4781a6551d6a8914029d616186e80282237b6a42ac533a0a1907ebda69632fb4"
       define_method(:install) do
         bin.install "difi"
       end
