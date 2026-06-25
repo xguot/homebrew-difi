@@ -11,7 +11,7 @@ class Difi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/xguot/difi/releases/download/v0.2.7/difi_Darwin_x86_64.tar.gz"
-      sha256 "4d17cc6557c3844caef0d86b6f341f557f2a89d82479b38ebb5ea00d444bc3ab"
+      sha256 "e8e50f931f3963c3efb372b64aee9e4bf9705b31bb5e384398f40e21491acc24"
 
       define_method(:install) do
         bin.install "difi"
@@ -19,7 +19,7 @@ class Difi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/xguot/difi/releases/download/v0.2.7/difi_Darwin_arm64.tar.gz"
-      sha256 "417c12ff3789d349d06dffbe210c9b3e37f221d0470877e98ccf1922cc744fa9"
+      sha256 "1917406844d472bd43675f8d3a1b16a4aea2505aea5a7df1fc7c237943f4acf3"
 
       define_method(:install) do
         bin.install "difi"
@@ -30,14 +30,14 @@ class Difi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/xguot/difi/releases/download/v0.2.7/difi_Linux_x86_64.tar.gz"
-      sha256 "e3d0f7eb110d82d88dbc246ce5873c10446432de846b38eeef90a23de18c45e5"
+      sha256 "59e7b804ce51ecfd13744075adf09378108698959e6af86abd2c0a3aa016c0dd"
       define_method(:install) do
         bin.install "difi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/xguot/difi/releases/download/v0.2.7/difi_Linux_arm64.tar.gz"
-      sha256 "2bb783befe9191af9f911a44079535b13d879c0840590b7b1b47dceec860d22c"
+      sha256 "92bd6b0bc9fe896174c186e0b3b951fd2fde40e182edac1fa1ab1703784f93fc"
       define_method(:install) do
         bin.install "difi"
       end
